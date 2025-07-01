@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element:Concept xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:element="http:///com/tibco/cep/designtime/core/model/element" folder="/Concepts/" name="taxCal" description="" GUID="6A003873-F1FE-17C5-82A6-36A9597F3C08" ownerProjectName="HTTPChannel" superConceptPath="" autoStartStateMachine="true">
+  <extendedProperties/>
+  <properties name="empID" ownerProjectName="HTTPChannel"/>
+  <properties name="empState" ownerProjectName="HTTPChannel"/>
+  <properties name="empSalary" ownerProjectName="HTTPChannel"/>
+  <properties name="empTaxPercentage" ownerProjectName="HTTPChannel"/>
+</element:Concept>

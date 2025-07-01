@@ -1,0 +1,16 @@
+/**
+ * @description 
+ */
+String rulefunction RuleFunctions.CheckTaxSlab {
+	attribute {
+		validity = ACTION;
+	}
+	scope {
+		Concepts.taxCal conceptVal;
+	}
+	body {
+		RuleFunctions.calculateTax(conceptVal);
+		System.debugOut("Tax : "+conceptVal.empTaxPercentage);
+		return conceptVal.empTaxPercentage;
+	}
+}

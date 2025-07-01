@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Table:Table xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Table="http:///com/tibco/cep/decision/table/model/DecisionTable.ecore" name="calculateTax" folder="/DecisionTable/" implements="/RuleFunctions/calculateTax" since="BE 4.0">
+  <decisionTable>
+    <rule id="1">
+      <cond id="1_1" colId="1" expr="&quot;1&quot;"/>
+      <cond id="1_3" colId="3" expr="&quot;MH&quot;"/>
+      <act id="1_2" colId="2" expr="&quot;250000&quot;"/>
+      <act id="1_4" colId="4" expr="&quot;2&quot;"/>
+    </rule>
+    <rule id="2">
+      <cond id="2_1" colId="1" expr="&quot;2&quot;"/>
+      <cond id="2_3" colId="3" expr="&quot;GJ&quot;"/>
+      <act id="2_2" colId="2" expr="&quot;35000&quot;"/>
+      <act id="2_4" colId="4" expr="&quot;10&quot;"/>
+    </rule>
+    <rule id="3">
+      <cond id="3_1" colId="1" expr="&quot;3&quot;"/>
+      <cond id="3_3" colId="3" expr="&quot;LU&quot;"/>
+      <act id="3_2" colId="2" expr="&quot;10&quot;"/>
+      <act id="3_4" colId="4" expr="&quot;1&quot;"/>
+    </rule>
+    <columns>
+      <column id="1" name="tax.empID" propertyPath="/Concepts/taxCal/empID" columnType="CONDITION"/>
+      <column id="3" name="tax.empState" propertyPath="/Concepts/taxCal/empState" columnType="CONDITION"/>
+      <column id="2" name="tax.empSalary" propertyPath="/Concepts/taxCal/empSalary" columnType="ACTION"/>
+      <column id="4" name="tax.empTaxPercentage" propertyPath="/Concepts/taxCal/empTaxPercentage" columnType="ACTION"/>
+    </columns>
+  </decisionTable>
+  <exceptionTable/>
+  <argument direction="BOTH">
+    <property path="/Concepts/taxCal" alias="tax" resourceType="CONCEPT"/>
+  </argument>
+</Table:Table>

@@ -1,0 +1,14 @@
+/**
+ * @description 
+ */
+virtual void rulefunction RuleFunctions.calculateTax {
+	attribute {
+		validity = ACTION;
+	}
+	scope {
+		Concepts.taxCal tax;
+	}
+	body {
+		
+	}
+}
